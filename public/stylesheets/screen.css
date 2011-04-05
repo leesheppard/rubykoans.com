@@ -35,7 +35,7 @@ h3 { font-size: 20px; margin-top: 40px; }
   display     : block;
   width       : 250px;
   height      : 79px;
-  margin      : 40px 0 0 0; 
+  margin      : 40px 0 0 0;
   text-indent : -999em;
   background  : url(/images/edgecase_logo.gif) no-repeat 10px; }
 
@@ -157,6 +157,7 @@ h3 { font-size: 20px; margin-top: 40px; }
 #main_content p {
   margin      : 20px 0;
   font-size   : 18px;
+  color       : #333;
   line-height : 25px; }
 
 #main_content p.instructions_message {
