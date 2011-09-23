@@ -44,7 +44,7 @@ body.small #sidebar {
   background  : url(/images/edgecase_logo.gif) no-repeat 10px; }
 
 
-#main_content #download_button {
+#main_content .main_button {
   display         : block;
   height          : 40px;
   margin          : 0 auto 30px auto;
@@ -65,7 +65,7 @@ body.small #sidebar {
   -webkit-border-radius : 4px;
   border-radius         : 4px; }
 
-#main_content #download_button:active {
+#main_content .main_button:active {
   background-image: -moz-linear-gradient(top, #d00, #E15C56);
   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #E15C56),color-stop(1, #dd0000));
             filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#E15C56', endColorstr='#dd0000');

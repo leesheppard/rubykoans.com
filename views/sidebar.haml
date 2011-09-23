@@ -1,5 +1,6 @@
 #sidebar
-  %a#download_button(href='https://github.com/downloads/edgecase/ruby_koans/rubykoans-2010-12-23.zip') download the koans
+  %a.main_button(href='https://github.com/downloads/edgecase/ruby_koans/rubykoans-2010-12-23.zip') download the koans
+  %a.main_button(href='/online') ruby koans online
 
   %nav(class=@page)
     %a.tab{ :class => ('active' if @page == 'nix' ),    :href => '/' } *nix

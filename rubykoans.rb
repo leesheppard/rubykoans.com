@@ -19,7 +19,7 @@ get '/' do
   haml :index
 end
 
-get '/windows' do
+get '/windows/?' do
   @page = 'windows'
   @editors = [
     {:name => 'E Text Editor', :url => 'http://www.e-texteditor.com'},
@@ -28,4 +28,8 @@ get '/windows' do
   ]
 
   haml :windows
+end
+
+get '/online/?' do
+  redirect 'http://koans.heroku.com'
 end
