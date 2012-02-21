@@ -117,10 +117,6 @@ h3 {
   padding: 50px 0 0 0;
 }
 
-body.small #sidebar {
-  position: static;
-}
-
 #edgecase_logo {
   display: block;
   width: 250px;
@@ -426,4 +422,30 @@ body.small #sidebar {
   padding-top: 3em;
   color: #9b9b9b;
   font-size: 24px;
+}
+
+@media all and (max-width: 1060px) {
+  #sidebar {
+    position: static;
+    width: 500px;
+    margin: 0 auto;
+  }
+  #sidebar nav {
+    width: auto;
+    padding-top: 20px;
+  }
+  #sidebar nav ol {
+    overflow: hidden;
+  }
+  #sidebar nav li {
+    float: left;
+    width: 48%;
+  }
+
+  #main_content {
+    margin: 0 auto;
+  }
+  #main_content .main_button {
+    margin-bottom: 20px;
+  }
 }

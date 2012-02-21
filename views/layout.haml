@@ -6,6 +6,8 @@
     %meta{ :name => 'keywords',    :content => 'ruby' }
     %meta{ :name => 'apple-mobile-web-app-capable',          :content => 'yes' }
     %meta{ :name => 'apple-mobile-web-app-status-bar-style', :content => 'black' }
+    %meta{ :name => 'viewport',                              :content => 'width=device-width', :'initial-scale' => '1.0' }
+    %meta{ :'http-equiv' => 'X-UA-Compatible',               :content => 'IE=edge,chrome=1' }
     %link{ :rel  => 'apple-touch-icon', :href => '/apple_favicon.png' }
     %link{ :rel  => 'shortcut icon',    :href => '/favicon.ico', :type => 'image/x-icon' }
     %link{ :rel  => 'stylesheet',       :href => '/stylesheets/screen.css' }
@@ -13,7 +15,6 @@
     %script{ :type => 'text/javascript', :src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' }
     :javascript
       function iPhone(){ return (navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)); }
-      function setBodyClass(){ document.body.className = (document.documentElement.clientWidth<=940) ? 'small' : 'large'; }
 
       (function($){
         $.extend(jQuery.easing,{
@@ -76,8 +77,6 @@
 
 
         $(function(){
-          setBodyClass();
-          $(window).resize(setBodyClass);
           $('#sidebar ol a').scrollToAnchor().highlightVisibleAnchor();
 
           $('.email_address').each(function() {
