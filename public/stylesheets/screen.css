@@ -1,3 +1,4 @@
+/* line 17, ../../../../../../../../../Users/nummi/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,46 +15,55 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-body {
+/* line 22, ../../../../../../../../../Users/nummi/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
+/* line 24, ../../../../../../../../../Users/nummi/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
+/* line 26, ../../../../../../../../../Users/nummi/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 28, ../../../../../../../../../Users/nummi/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
+/* line 30, ../../../../../../../../../Users/nummi/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
+/* line 103, ../../../../../../../../../Users/nummi/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
+/* line 32, ../../../../../../../../../Users/nummi/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
+/* line 116, ../../../../../../../../../Users/nummi/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
+/* line 23, ../sass/screen.sass */
 .clearfix:after {
   content: ".";
   display: block;
@@ -62,19 +72,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   visibility: hidden;
 }
 
+/* line 30, ../sass/screen.sass */
 * html .clearfix {
   height: 1%;
 }
 
+/* line 33, ../sass/screen.sass */
 .clear {
   clear: both;
 }
 
+/* line 36, ../sass/screen.sass */
 body {
   font-family: "OFL Sorts Mill Goudy", "sorts-mill-goudy-1", "sorts-mill-goudy-2", serif;
   background: white;
 }
 
+/* line 40, ../sass/screen.sass */
 #top_line {
   position: fixed;
   top: 0;
@@ -85,30 +99,36 @@ body {
   z-index: 2;
 }
 
+/* line 49, ../sass/screen.sass */
 h1, h2, h3 {
   color: #e70800;
 }
 
+/* line 52, ../sass/screen.sass */
 h1 {
   font-size: 64px;
 }
 
+/* line 55, ../sass/screen.sass */
 h2 {
   font-size: 28px;
   background: url(/images/header_line.gif) repeat-x 0 50%;
 }
 
+/* line 59, ../sass/screen.sass */
 h2 span {
   padding-right: 12px;
   background: white;
 }
 
+/* line 63, ../sass/screen.sass */
 h3 {
   margin-top: 40px;
   font-size: 20px;
 }
 
 /*-- Sidebar ---------------------------------------------------------------------- */
+/* line 71, ../sass/screen.sass */
 #sidebar {
   position: fixed;
   left: 800px;
@@ -117,15 +137,17 @@ h3 {
   padding: 50px 0 0 0;
 }
 
-#edgecase_logo {
+/* line 79, ../sass/screen.sass */
+#new_context_logo {
   display: block;
   width: 250px;
   height: 79px;
   margin: 40px 0 0 0;
   text-indent: -999em;
-  background: url(/images/edgecase_logo.gif) no-repeat 10px;
+  background: url(/images/new_context_logo.png) no-repeat;
 }
 
+/* line 88, ../sass/screen.sass */
 #main_content .main_button {
   display: block;
   height: 40px;
@@ -138,32 +160,30 @@ h3 {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb746f), color-stop(100%, #dd0000));
-  background-image: -webkit-linear-gradient(#fb746f, #dd0000);
-  background-image: -moz-linear-gradient(#fb746f, #dd0000);
-  background-image: -o-linear-gradient(#fb746f, #dd0000);
-  background-image: -ms-linear-gradient(#fb746f, #dd0000);
-  background-image: linear-gradient(#fb746f, #dd0000);
-  -moz-border-radius: 4px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb746f), color-stop(100%, #dd0000));
+  background: -webkit-linear-gradient(#fb746f, #dd0000);
+  background: -moz-linear-gradient(#fb746f, #dd0000);
+  background: -o-linear-gradient(#fb746f, #dd0000);
+  background: linear-gradient(#fb746f, #dd0000);
   -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
   -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
 }
+/* line 91, ../sass/screen.sass */
 #main_content .main_button:active {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e15c56), color-stop(100%, #dd0000));
-  background-image: -webkit-linear-gradient(#e15c56, #dd0000);
-  background-image: -moz-linear-gradient(#e15c56, #dd0000);
-  background-image: -o-linear-gradient(#e15c56, #dd0000);
-  background-image: -ms-linear-gradient(#e15c56, #dd0000);
-  background-image: linear-gradient(#e15c56, #dd0000);
-  -moz-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e15c56), color-stop(100%, #dd0000));
+  background: -webkit-linear-gradient(#e15c56, #dd0000);
+  background: -moz-linear-gradient(#e15c56, #dd0000);
+  background: -o-linear-gradient(#e15c56, #dd0000);
+  background: linear-gradient(#e15c56, #dd0000);
   -webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* line 94, ../sass/screen.sass */
 #sidebar nav {
   width: 250px;
   margin: 0 auto;
@@ -171,20 +191,24 @@ h3 {
   line-height: 26px;
   text-transform: uppercase;
 }
+/* line 101, ../sass/screen.sass */
 #sidebar nav li {
   margin: 0 0 0 10px;
   border-bottom: 1px solid #dddddd;
   font-size: 13px;
 }
+/* line 106, ../sass/screen.sass */
 #sidebar nav li:last-child {
   border-bottom: 0;
 }
+/* line 109, ../sass/screen.sass */
 #sidebar nav a {
   display: block;
   color: black;
   font-size: 11px;
   text-decoration: none;
 }
+/* line 115, ../sass/screen.sass */
 #sidebar nav a.tab {
   float: left;
   width: 115px;
@@ -195,20 +219,16 @@ h3 {
   line-height: 32px;
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
-  -o-border-top-left-radius: 4px;
-  -ms-border-top-left-radius: 4px;
-  -khtml-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
-  -o-border-top-right-radius: 4px;
-  -ms-border-top-right-radius: 4px;
-  -khtml-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
 }
+/* line 126, ../sass/screen.sass */
 #sidebar nav a.tab.active {
   background-color: #f3f3f3;
 }
+/* line 129, ../sass/screen.sass */
 #sidebar nav ol {
   clear: left;
   padding: 7px 12px 5px 2px;
@@ -216,40 +236,32 @@ h3 {
   background-color: #f3f3f3;
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
-  -o-border-bottom-right-radius: 4px;
-  -ms-border-bottom-right-radius: 4px;
-  -khtml-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
-  -o-border-bottom-right-radius: 4px;
-  -ms-border-bottom-right-radius: 4px;
-  -khtml-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+/* line 137, ../sass/screen.sass */
 #sidebar nav ol.windows ol {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
-  -o-border-top-left-radius: 4px;
-  -ms-border-top-left-radius: 4px;
-  -khtml-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
 }
+/* line 139, ../sass/screen.sass */
 #sidebar nav ol.nix ol {
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
-  -o-border-top-right-radius: 4px;
-  -ms-border-top-right-radius: 4px;
-  -khtml-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
 }
 
 /*-- Main Content ---------------------------------------------------------------- */
+/* line 147, ../sass/screen.sass */
 #main_content {
   width: 600px;
   margin: 0;
   padding: 36px 60px 30px 60px;
 }
+/* line 152, ../sass/screen.sass */
 #main_content section {
   clear: both;
   display: block;
@@ -257,25 +269,30 @@ h3 {
   padding-top: 65px;
 }
 
+/* line 159, ../sass/screen.sass */
 #main_content .koanaons_sections_section div {
   margin: 20px 0;
 }
 
+/* line 162, ../sass/screen.sass */
 #main_content a {
   color: #e70800;
 }
 
+/* line 165, ../sass/screen.sass */
 #main_content ul {
   list-style-type: circle;
   list-style-position: inside;
   margin-left: 20px;
 }
 
+/* line 170, ../sass/screen.sass */
 #main_content ul li,
 #main_content ol li {
   margin-bottom: 0.5em;
 }
 
+/* line 174, ../sass/screen.sass */
 #main_content p {
   margin: 20px 0;
   font-size: 18px;
@@ -283,6 +300,7 @@ h3 {
   line-height: 25px;
 }
 
+/* line 180, ../sass/screen.sass */
 #main_content p.instructions_message {
   margin-top: 0;
   margin-left: 0;
@@ -292,20 +310,23 @@ h3 {
   line-height: 24px;
 }
 
+/* line 188, ../sass/screen.sass */
 #main_content p.instructions_message a {
   color: #f54d47;
 }
 
+/* line 191, ../sass/screen.sass */
 .terminal, .editor {
   padding: 5px 10px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444444), color-stop(100%, #000000));
-  background-image: -webkit-linear-gradient(#444444, #000000);
-  background-image: -moz-linear-gradient(#444444, #000000);
-  background-image: -o-linear-gradient(#444444, #000000);
-  background-image: -ms-linear-gradient(#444444, #000000);
-  background-image: linear-gradient(#444444, #000000);
+  background: #333333;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444444), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(#444444, #000000);
+  background: -moz-linear-gradient(#444444, #000000);
+  background: -o-linear-gradient(#444444, #000000);
+  background: linear-gradient(#444444, #000000);
 }
 
+/* line 196, ../sass/screen.sass */
 #main_content .terminal p,
 #main_content .editor p {
   margin: 10px 0;
@@ -315,6 +336,7 @@ h3 {
 }
 
 /*-- Introduction Section ------------------------------------------------------------- */
+/* line 207, ../sass/screen.sass */
 #main_content #introduction {
   position: relative;
   top: 20px;
@@ -324,10 +346,12 @@ h3 {
   padding-bottom: 106px;
   background: url(/images/enso.gif) no-repeat 91% 0;
 }
+/* line 216, ../sass/screen.sass */
 #main_content #introduction h1 {
   margin-bottom: 45px;
   padding-top: 24px;
 }
+/* line 220, ../sass/screen.sass */
 #main_content #introduction h1 span {
   display: block;
   margin: 10px 0 0 0;
@@ -336,6 +360,7 @@ h3 {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+/* line 228, ../sass/screen.sass */
 #main_content #introduction p {
   width: 600px;
   color: #555555;
@@ -345,24 +370,28 @@ h3 {
 }
 
 /*-- Structure Section ---------------------------------------------------------------- */
+/* line 239, ../sass/screen.sass */
 #main_content #the_structure img {
   float: left;
   margin: 20px 30px 30px 0;
 }
 
 /*-- Authors Section ------------------------------------------------------------------ */
+/* line 247, ../sass/screen.sass */
 #main_content #authors p {
   float: left;
   width: 275px;
 }
 
 /*-- Other Resources Section ---------------------------------------------------------- */
+/* line 255, ../sass/screen.sass */
 #main_content #other_resources {
   margin-bottom: 0;
 }
 
 /*-- Private Training ----------------------------------------------------------------- */
-#main_content #edgecase a {
+/* line 262, ../sass/screen.sass */
+#main_content #new_context a {
   display: block;
   height: 40px;
   margin: 0 auto 30px auto;
@@ -374,42 +403,41 @@ h3 {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb746f), color-stop(100%, #dd0000));
-  background-image: -webkit-linear-gradient(#fb746f, #dd0000);
-  background-image: -moz-linear-gradient(#fb746f, #dd0000);
-  background-image: -o-linear-gradient(#fb746f, #dd0000);
-  background-image: -ms-linear-gradient(#fb746f, #dd0000);
-  background-image: linear-gradient(#fb746f, #dd0000);
-  -moz-border-radius: 4px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fb746f), color-stop(100%, #dd0000));
+  background: -webkit-linear-gradient(#fb746f, #dd0000);
+  background: -moz-linear-gradient(#fb746f, #dd0000);
+  background: -o-linear-gradient(#fb746f, #dd0000);
+  background: linear-gradient(#fb746f, #dd0000);
   -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
   -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   display: inline-block;
   padding-right: 35px;
   padding-left: 35px;
 }
-#main_content #edgecase a:active {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e15c56), color-stop(100%, #dd0000));
-  background-image: -webkit-linear-gradient(#e15c56, #dd0000);
-  background-image: -moz-linear-gradient(#e15c56, #dd0000);
-  background-image: -o-linear-gradient(#e15c56, #dd0000);
-  background-image: -ms-linear-gradient(#e15c56, #dd0000);
-  background-image: linear-gradient(#e15c56, #dd0000);
-  -moz-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+/* line 268, ../sass/screen.sass */
+#main_content #new_context a:active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e15c56), color-stop(100%, #dd0000));
+  background: -webkit-linear-gradient(#e15c56, #dd0000);
+  background: -moz-linear-gradient(#e15c56, #dd0000);
+  background: -o-linear-gradient(#e15c56, #dd0000);
+  background: linear-gradient(#e15c56, #dd0000);
   -webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /*-- Inspiration and Other Resources Section ------------------------------------------ */
+/* line 274, ../sass/screen.sass */
 #main_content #inspiration p a,
 #main_content #other_resources p a {
   line-height: 16px;
   text-decoration: none;
 }
 
+/* line 279, ../sass/screen.sass */
 #main_content #other_resources a span,
 #main_content #inspiration a span {
   display: block;
@@ -418,6 +446,7 @@ h3 {
   text-decoration: none;
 }
 
+/* line 288, ../sass/screen.sass */
 #mountains {
   padding-top: 3em;
   color: #9b9b9b;
@@ -425,27 +454,75 @@ h3 {
 }
 
 @media all and (max-width: 1060px) {
+  /* line 296, ../sass/screen.sass */
   #sidebar {
     position: static;
     width: 500px;
     margin: 0 auto;
   }
+  /* line 301, ../sass/screen.sass */
   #sidebar nav {
     width: auto;
     padding-top: 20px;
   }
+  /* line 305, ../sass/screen.sass */
   #sidebar nav ol {
     overflow: hidden;
   }
+  /* line 308, ../sass/screen.sass */
   #sidebar nav li {
     float: left;
     width: 48%;
   }
 
+  /* line 312, ../sass/screen.sass */
+  #new_context_logo {
+    margin: 30px 0 0 125px;
+  }
+
+  /* line 315, ../sass/screen.sass */
   #main_content {
     margin: 0 auto;
   }
+  /* line 318, ../sass/screen.sass */
   #main_content .main_button {
     margin-bottom: 20px;
+  }
+}
+@media all and (max-width: 650px) {
+  /* line 323, ../sass/screen.sass */
+  #main_content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* line 328, ../sass/screen.sass */
+  #main_content #introduction {
+    width: auto;
+    background-position: 50% 50%;
+    background-size: 100%;
+  }
+  /* line 333, ../sass/screen.sass */
+  #main_content #introduction p {
+    width: 100%;
+    line-height: 130%;
+  }
+  /* line 337, ../sass/screen.sass */
+  #main_content #the_structure img {
+    display: none;
+  }
+
+  /* line 340, ../sass/screen.sass */
+  #sidebar {
+    width: 90%;
+  }
+  /* line 343, ../sass/screen.sass */
+  #sidebar nav li {
+    width: 47%;
+  }
+
+  /* line 346, ../sass/screen.sass */
+  #new_context_logo {
+    margin: 30px auto 0 auto;
   }
 }
