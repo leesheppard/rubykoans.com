@@ -29,7 +29,3 @@ get '/windows/?' do
 
   haml :windows
 end
-
-get '/online/?' do
-  redirect 'http://koans.heroku.com'
-end
