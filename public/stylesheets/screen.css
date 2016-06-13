@@ -97,13 +97,13 @@ h3 {
   width: 250px;
   padding: 50px 0 0 0; }
 
-#neo_logo {
+#edgecase_logo {
   display: block;
-  width: 132px;
-  height: 44px;
+  width: 232px;
+  height: 65px;
   margin: 40px auto 0 auto;
   text-indent: -999em;
-  background: url(/images/neo.png) no-repeat; }
+  background: url(/images/edgecase_logo.gif) no-repeat; }
 
 #main_content .main_button {
   display: block;
