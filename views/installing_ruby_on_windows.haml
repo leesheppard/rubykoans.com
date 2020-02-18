@@ -4,26 +4,25 @@
     These instructions are for Windows. We also have 
     %a{:href => '/#installing_ruby'} *nix instructions
     \.
-  %p You must have a version of Ruby installed in order to run the Koans. Please take the time to download a version of Ruby that best suits your needs. The koans use features that are built into the ruby language so many ports of the Ruby Interpreter will run the koans without additional configuration or hacking. If you're unsure which version of ruby to install, the one click installer of MRI (Matz Ruby Interpreter) in the 1.8 series is probably perfect to get started. 
-
   %p
-    If you're interested in running the Koans (or any other Ruby programs) in multiple Ruby versions then you'll probably want to download "Pik" which is a ruby package manager for windows (
-    %a{ :href => 'http://github.com/vertiginous/pik', :target => '_blank' } http://github.com/vertiginous/pik
-    ) which is based on the *nix tool RVM (
-    %a{ :href => 'http://rvm.beginrescueend.com', :target => '_blank' } http://rvm.beginrescueend.com
-    ).
-
-  %p
-    So, follow this link and download any of the 1.8 packages:
-    %a{ :href => 'http://rubyforge.org/frs/?group_id=167&release_id=42563', :target => '_blank' } http://rubyforge.org/frs/?group_id=167&amp;release_id=42563
+    You must have a version of Ruby installed in order to run the Koans. Please take the time to download a version of Ruby that best suits your needs. The koans use features that are built into the ruby language so many ports of the Ruby Interpreter will run the koans without additional configuration or hacking. If you're unsure which version of ruby to install, the one click installer at (
+    %a{ :href => 'https://rubyinstaller.org/', :target => '_blank' } https://rubyinstaller.org/
+    ) is probably the best place to start. There are times when the latest version of the Ruby Interpreter (traditionally released on Christmas) is not yet fully supported on Windows. If you use the version suggested on that site, you should be fine.
 
   %p Download it and double click the installer. This will place all the ruby libraries and executables into a directory on your local machine. If you happen to forget to tick the box that asks if you wish to alter your PATH variable (where the command line looks for programs to run when you're typing commands) then you can do that manually by: 
 
   %ol
-    %li Find where you installed Ruby (usually C:\Ruby) 
+    %li Find where you installed Ruby (usually something like C:\Ruby26-x64 though it will depend on the version you install) 
     %li Right click on My Computer (or the recent windows equal) and click "Properties" 
     %li On the advanced tab click the button "Environmental Variables" 
     %li Add "PATH-TO-RUBY\bin;" to the beginning (or end, or whereever) 
+  %p
+    Note - another option, if you are adventurous is to install, the (
+    %a{ :href => 'https://docs.microsoft.com/en-us/windows/wsl/about', :target => '_blank' } Windows Subsystem for Linux (WSL)
+    ) and follow along with (
+    %a{:href => '/#installing_ruby'} the *nix instructions
+    ) in your bash shell. The details of this is beyond the scope of this tutorial, but there is an impressive amount of info now available online.
+
 
   %p Now open a command prompt and type "ruby -v" if you get a response and no error, then you've done it! Now that you have ruby installed you'll need to pull down the koans.
 
@@ -32,3 +31,5 @@
     %li Open command prompt (start &gt; run &gt; type "cmd" hit enter) 
     %li run (based on step 1) "cd C:\oss\ruby_koans"
     %li run "rake" 
+  
+  %p At your command prompt, you can also optionally run "gem install win32console". This will color the output to make it easier to see what is happening.
