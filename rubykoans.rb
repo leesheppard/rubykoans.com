@@ -9,11 +9,11 @@ end
 get '/' do
   @page = 'nix'
   @editors = [
-    {:name => 'Vim',      :url => 'http://code.google.com/p/macvim'},
-    {:name => 'Emacs',    :url => 'http://homepage.mac.com/zenitani/emacs-e.html'},
+    {:name => 'Vim',      :url => 'https://github.com/macvim-dev/macvim'},
+    {:name => 'Emacs',    :url => 'https://www.gnu.org/software/emacs/'},
     {:name => 'TextMate', :url => 'http://macromates.com'},
     {:name => 'RubyMine', :url => 'http://www.jetbrains.com/ruby'},
-    {:name => 'jEdit',    :url => 'http://www.jedit.org'}
+    {:name => 'VSCode',    :url => 'https://code.visualstudio.com/'}
   ]
 
   haml :index
@@ -22,9 +22,10 @@ end
 get '/windows/?' do
   @page = 'windows'
   @editors = [
-    {:name => 'E Text Editor', :url => 'http://www.e-texteditor.com'},
+    {:name => 'VSCode',        :url => 'https://code.visualstudio.com/'},
     {:name => 'RubyMine',      :url => 'http://www.jetbrains.com/ruby'},
-    {:name => 'jEdit',         :url => 'http://www.jedit.org'},
+    {:name => 'Atom',          :url => 'http://atom.io'},
+    {:name => 'Vim',           :url => 'https://www.vim.org/download.php'}
   ]
 
   haml :windows
