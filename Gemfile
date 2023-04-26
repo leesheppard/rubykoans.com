@@ -1,7 +1,6 @@
 source "https://rubygems.org"
-ruby "2.7.0"
+ruby "3.1.3"
 
-gem 'sinatra', '>=1.2.6'
-gem 'haml'
-gem 'sass'
-gem 'compass'
+gem 'sinatra'
+gem 'webrick'
+gem 'haml', '4.0.6'
